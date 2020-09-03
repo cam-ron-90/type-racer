@@ -13,8 +13,8 @@ const PlayerSchema = new mongoose.Schema({
 
 const GameSchema = new mongoose.Schema({
     words : [{type : String}],
-    isOpen : {type : Boolean,deadult : true},
-    isOver : {type : Boolean,deadult : false},
+    isOpen : {type : Boolean,default : true},
+    isOver : {type : Boolean,default : false},
     players : [playerSchema],
     startTime : {type : Number}
 });
