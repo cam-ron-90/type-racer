@@ -1,4 +1,4 @@
-const axios = requie('axios');
+const axios = require('axios');
 
 const uri = "http://api.quotable.io/random";
 

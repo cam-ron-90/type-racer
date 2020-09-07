@@ -15,7 +15,7 @@ const GameSchema = new mongoose.Schema({
     words : [{type : String}],
     isOpen : {type : Boolean,default : true},
     isOver : {type : Boolean,default : false},
-    players : [playerSchema],
+    players : [PlayerSchema],
     startTime : {type : Number}
 });
 
